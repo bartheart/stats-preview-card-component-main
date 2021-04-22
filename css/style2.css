@@ -6,19 +6,9 @@ body{
     font-weight: 400; 
     max-width: min-content;
     font-size: 15px;
-    background-color: hsl(233, 47%, 7%);
+    background-color:hsl(233, 47%, 7%);
+    
 
-}
-h1, h2{
-    color: hsl(0, 0%, 100%);
-}
-
-p.parah, .table{
-    color: hsla(0, 0%, 100%, 0.75);
-}
-p{
-    font-size: 15px;
-    font-weight: 400;
 }
 
 .pic_mobile{
@@ -33,9 +23,8 @@ p{
 }
 .pic_desktop {
     grid-area: footer;
-}
-.tint{
-    background-color: hsl(277, 64%, 61%);
+    width: auto;
+    height: 100%;
 }
   
 .container {
@@ -58,7 +47,7 @@ p{
     grid-area: right;
 }
 img {
-    width: auto;
+    width: 100%;
     height: 100%;
 }
 
@@ -69,6 +58,12 @@ img {
     .pic_mobile{
         display: none;
     }
+
+    .pic_desktop{
+        width: auto;
+        height: auto;
+
+    }
     
     .table{
         display: grid;
@@ -77,11 +72,7 @@ img {
         grid-template-areas: 
             "left middle right";
     }
-    img {
-        width: auto;
-        height: 100%;
-        
-    }
+    
 }
 
 
@@ -91,6 +82,8 @@ img {
     }
     .pic_mobile{
         display: block;
+        width: 200%;
+        height: auto;
     }
     .pic_desktop{
         display: none;
@@ -129,5 +122,6 @@ img {
         height: 100%;
     }
 }
+
 
 
